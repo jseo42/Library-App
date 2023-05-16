@@ -1,0 +1,136 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 4fr;
+  background-color: #ffc389;
+}
+
+
+form {  
+  
+}
+
+form h1, span {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  position: relative;
+  margin: 1rem;
+
+  
+}
+
+.input-group input {
+  border: 2px solid #355c7d;
+  outline: none;
+  background: transparent;
+  height: 40px;
+  width: 320px;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+  caret-color: #fff
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ffa754;
+  padding: 3px;
+  pointer-events: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.input-group input:focus~label, 
+.input-group input:valid~label {
+  top: 0;
+  font-size: 13px;
+  background: #ffa754;
+  color: #fff;
+}
+
+.btn {
+  margin: 1rem;
+  width: 40%;
+  height: 2rem;
+  text-align: center;
+  background-color: #a1b4e7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ffc389;
+}
+
+
+.sidebar-form {
+  border-radius: 0px 10px 10px 0px;
+  padding: 2rem;
+  background-color: #d3dcf4;
+}
+
+.sidebar-form h1 {
+  color: #ffc389;
+}
+
+.sidebar-form h1 span {
+  color: #a1b4e7;
+}
+
+.storage-wrapper {
+  background-color: #ffc389;
+  
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+}
+
+.storage-display {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.storage {
+  display: grid;
+  grid-template-columns: 2rem 1fr 2rem;
+}
+ .border-block-left {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+.border-block-right {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+} 
+
+.storage-wrapper h4 {
+  font-size: 1.5rem;
+}
+

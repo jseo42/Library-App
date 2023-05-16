@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Library App</title>
+</head>
+<body>
+  <div class="sidebar-form">
+    <form id="addBooks">
+      <h1>the<span>Book</span>List</h1>
+      <div class="input-group">
+        <input type="text" name="title" required/>
+        <label for="title">Title</label>
+      </div>
+      <div class="input-group">
+        <input type="text" name="name" required/>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-group">
+        <input type="number" name="pages" required/>
+        <label for="page">Page</label>
+      </div>
+      <input type="submit" name="addBook" value="Add Book" class="btn">
+      
+    </form>
+  </div>
+  <div class="storage-wrapper">
+    <h4>myLibrary</h4>
+    <div class="storage">
+      <div class="border-block-left"></div>
+      <div class="storage-display">
+        <div class="book">
+
+        </div>
+      </div>
+      <div class="border-block-right"></div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
