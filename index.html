@@ -13,18 +13,23 @@
     <form id="addBooks">
       <h1>the<span>Book</span>List</h1>
       <div class="input-group">
-        <input type="text" name="title" required/>
+        <input type="text" name="title" id="title" required/>
         <label for="title">Title</label>
       </div>
       <div class="input-group">
-        <input type="text" name="name" required/>
+        <input type="text" name="name" id="name" required/>
         <label for="name">Name</label>
       </div>
       <div class="input-group">
-        <input type="number" name="pages" required/>
-        <label for="page">Page</label>
+        <input type="number" name="pages" id="pages" required/>
+        <label for="pages">Page</label>
+      </div>
+      <div class="check">
+        <label for="read">Read</label>
+        <input type="checkbox" id="read">
       </div>
       <input type="submit" name="addBook" value="Add Book" class="btn">
+
       
     </form>
   </div>
@@ -32,11 +37,7 @@
     <h4>myLibrary</h4>
     <div class="storage">
       <div class="border-block-left"></div>
-      <div class="storage-display">
-        <div class="book">
-
-        </div>
-      </div>
+      <div class="storage-display"></div>
       <div class="border-block-right"></div>
     </div>
   </div>
